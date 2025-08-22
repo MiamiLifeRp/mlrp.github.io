@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="imgs/logo.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Miami Life RP</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#live-data">Live Data</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#owners">Owners</a></li>
+            <li><a href="#join">Join Us</a></li>
+            <li><a href="#rules">Rules</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <img src="imgs/logo.png" alt="Miami Life RP Logo" class="logo">
+        <h1>Miami Life RP</h1>
+        <p class="tagline">Your story starts here. A growing, immersive city with serious RP and nonstop action.</p>
+        <div>
+            <a href="fivem://connect/cfx.re/join/4dp3o8" class="btn btn-connect">Connect Now</a>
+            <a href="#join" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <section id="live-data">
+        <h2 class="section-title">Live Server Data</h2>
+
+        <div class="server-stats">
+            <div class="stat">
+                <div class="stat-number" id="online-players"><span class="loading"></span></div>
+                <div class="stat-label">Online Players</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="queue-count">0</div>
+                <div class="stat-label">In Queue</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="server-status">Online</div>
+                <div class="stat-label">Server Status</div>
+            </div>
+        </div>
+
+        <h3>Currently Online Players (<span id="player-count">0</span>)</h3>
+        <div id="player-list-container">
+            <div id="player-list">
+                <div class="player">
+                    <span class="player-name">Loading player data...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_trap2.png" alt="1">
+                <div class="gallery-item-caption">Trap</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_pinkparadise2.png" alt="2">
+                <div class="gallery-item-caption">Pink Paradise</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_strawberryavenue1.png" alt="3">
+                <div class="gallery-item-caption">Strawberry Avenue 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_strawberryavenue2.png" alt="4">
+                <div class="gallery-item-caption">Strawberry Avenue 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_rideoutcustoms.png" alt="5">
+                <div class="gallery-item-caption">Ride Out Customs</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_cayoperico.png" alt="6">
+                <div class="gallery-item-caption">Cayo Perico</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_burgershot.png" alt="6">
+                <div class="gallery-item-caption">Burgershot 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="imgs/gallery/mlrp_burgershot2.png" alt="6">
+                <div class="gallery-item-caption">Burgershot 2</div>
+            </div>
+            </div>
+    </section>
+
+    <section id="owners">
+        <h2 class="section-title">Server Owners</h2>
+        <div class="features">
+            <div class="owner-card">
+                <img src="imgs/1.jpg" alt="Owner 1" class="owner-avatar">
+                <h3 class="owner-name">Vvs 🐐</h3>
+                <p class="owner-title">Owner & Lead Developer</p>
+                <p>Responsible for overall server development and vision.</p>
+            </div>
+
+            <div class="owner-card">
+                <img src="imgs/2.png" alt="Owner 2" class="owner-avatar">
+                <h3 class="owner-name">☆Dₒₗₚₕᵢₙ☆</h3>
+                <p class="owner-title">Owner & Developer</p>
+                <p>Focuses on implementing new features and maintaining server stability.</p>
+            </div>
+
+            <div class="owner-card">
+                <img src="imgs/3.png" alt="Owner 3" class="owner-avatar">
+                <h3 class="owner-name">TRELZ</h3>
+                <p class="owner-title">Co-Owner</p>
+                <p>Manages community relations and server events.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2 class="section-title">Join Miami Life RP</h2>
+        <div style="text-align: center; background-color: rgba(15,15,15,0.95); border: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 12px; max-width: 500px; margin: 0 auto 40px;">
+            <h3>Server IP: cfx.re/join/4dp3o8</h3>
+            <p>Connect directly using the button below or copy this IP</p>
+            <div style="margin-top: 20px;">
+                <a href="fivem://connect/cfx.re/join/4dp3o8" class="btn btn-connect">Connect Now</a>
+                <a href="https://discord.gg/miamiliferoleplay" class="btn" target="_blank">Join Our Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules">
+      <h2 class="section-title">Server Rules</h2>
+        <p style="text-align: center; color: var(--light-text); max-width: 800px; margin: -20px auto 30px auto;">
+            🔴 Violation of these rules may lead to warnings, kicks, temporary bans, or permanent bans.<br>
+            ✅ Our priority is immersive, serious, and respectful roleplay. Understanding these rules ensures a better experience for everyone.
+        </p>
+      <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+                <h3>1️⃣ No RDM (Random Deathmatch)</h3>
+                <p>🔫 Killing someone without a valid roleplay reason is strictly forbidden. You must have a legitimate in-character reason and clear build-up before engaging in violence.</p>
+                <p>🚫 KOS (Kill on Sight) is only allowed in specific gang wars or approved by staff ahead of time.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕐 1-Day Ban → ⏳ 3-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-car-crash"></i></div>
+                <h3>2️⃣ No VDM (Vehicle Deathmatch)</h3>
+                <p>🚗 Intentionally using a vehicle to run over players without proper RP is not allowed.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕑 2-Day Ban → ⏳ 7-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-theater-masks"></i></div>
+                <h3>3️⃣ No Fail RP</h3>
+                <p>🎭 You must behave and react realistically to your character’s situation (e.g., ignoring injuries, pulling large weapons from nowhere).</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 📘 RP Training → ⏳ 3-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>4️⃣ No Metagaming</h3>
+                <p>🧠 Using OOC knowledge in-character is not allowed (e.g., watching streams to track players, sharing info via Discord).</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕐 1-Day Ban → ⏳ 3-Day Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-fist-raised"></i></div>
+                <h3>5️⃣ No Powergaming</h3>
+                <p>🤼 Don’t force actions on others or RP unrealistically (e.g., “/me knocks you out” with no chance to react).</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕑 2-Day Ban → ⏳ 7-Day Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                <h3>6️⃣ Show Respect (IC & OOC)</h3>
+                <p>🤝 No racism, hate speech, or harassment of any kind. Personal attacks will result in instant action.</p>
+                <p><strong>Punishment:</strong> ❌ Immediate Kick or Ban → 📞 Staff Review</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-sign-out-alt"></i></div>
+                <h3>7️⃣ No Combat Logging</h3>
+                <p>🚪 You must stay in-character, even when things aren’t going your way. Do not log off mid-arrest or shootout.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕐 1-Day Ban → ⏳ 3-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+                <h3>8️⃣ Use Realistic Names</h3>
+                <p>🧍 No meme, celebrity, or troll names (e.g., Big Chungus, Lil Skrrt420).</p>
+                <p><strong>Punishment:</strong> 🔄 Character Reset → ⚠️ Warning → 📞 Staff Review → ⏳ Temp Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-bug"></i></div>
+                <h3>9️⃣ No Cheating or Exploiting</h3>
+                <p>💻 Hacking, glitches, and exploits will result in zero tolerance.</p>
+                <p><strong>Punishment:</strong> 🚫 Immediate Permanent Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>🔟 Use Common Sense</h3>
+                <p>🧭 If it feels wrong or unrealistic—don’t do it. Do not abuse rule loopholes.</p>
+                <p><strong>Punishment:</strong> 📞 Staff Discretion → ⚠️ Case-by-case</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-female"></i></div>
+                <h3>1️⃣1️⃣ Respect Female Characters & Players</h3>
+                <p>👩‍🦰 Harassment, sexual RP, or disrespect will not be tolerated.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → ❌ Kick → ⏳ Temp Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-male"></i></div>
+                <h3>1️⃣2️⃣ Respect Male Characters & Players</h3>
+                <p>👨 All players are protected from harassment equally.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → ❌ Kick → ⏳ Temp Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-hand-paper"></i></div>
+                <h3>1️⃣3️⃣ No Force RP</h3>
+                <p>🛑 Do not force players into RP they are trying to avoid.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕑 2-Day Ban → ⏳ 7-Day Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-skull-crossbones"></i></div>
+                <h3>1️⃣4️⃣ NLR – New Life Rule</h3>
+                <p>🪦 After death, forget everything and wait 15 minutes to return to the scene.</p>
+                <p><strong>Punishment:</strong> 📞 Staff Review → 🧑‍⚖️ Case-by-case</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-coins"></i></div>
+                <h3>1️⃣5️⃣ No Stealing Miami Coin Guns</h3>
+                <p>🪙 These are exclusive items, not regular loot.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → ❌ Kick → ⏳ Temp Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-tachometer-alt"></i></div>
+                <h3>1️⃣6️⃣ Speed Limit Rule</h3>
+                <p>🏎️ Speeds over 250 MPH are not allowed.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🚘 Vehicle Confiscation → ⏳ Temp Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>1️⃣7️⃣ Police Scene Engagement Rule</h3>
+                <p>👮 You must RP for at least 30 seconds before attacking law enforcement.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕐 1-Day Ban → ⏳ 3-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
+                <h3>1️⃣8️⃣ No Cop Baiting</h3>
+                <p>🚔 Don't provoke police without RP purpose (e.g., doing donuts outside PD, ramming cruisers for fun).</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕐 1-Day Ban → ⏳ 3-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-ambulance"></i></div>
+                <h3>1️⃣9️⃣ No Stealing EMS Vehicles</h3>
+                <p>🚑 EMS vehicles may not be stolen under any circumstances, unless part of an approved, realistic RP scenario.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🚘 Vehicle Confiscation → ⏳ Temp Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                <h3>2️⃣0️⃣ Ignoring Staff Rule</h3>
+                <p>🚨 If a staff member gives you a direction, you must follow it. Arguing during a sit or ignoring messages is a serious offense.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → 🕑 2-Day Ban → ⏳ 7-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-tint"></i></div>
+                <h3>2️⃣1️⃣ Water Dump Rule</h3>
+                <p>🌊 Throwing downed players into water to drown/kill them is not allowed, as it makes EMS/PD RP impossible.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → ⏳ 3-Day Ban → 🔒 Perm Ban</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-server"></i></div>
+                <h3>2️⃣2️⃣ Server Disrespect (Server Diss)</h3>
+                <p>💬 Speaking negatively about the server or trying to recruit people to other communities is prohibited.</p>
+                <p><strong>Punishment:</strong> ⚠️ Warning → 📞 Staff Review → ❌ Kick → ⏳ Temp Ban → 🔒 Perm Ban</p>
+            </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+          <h3 style="color: var(--primary); font-size: 1.5rem;">📢 Final Reminder</h3>
+          <p style="color: var(--light-text); font-size: 1.2rem; max-width: 700px; margin: 10px auto;">
+              Miami Life RP is a serious RP environment. We want everyone to enjoy immersive, meaningful stories — together. Respect the rules, respect your fellow players, and build your legacy with integrity.
+          </p>
+          <p style="margin-top: 20px;">
+              📨 Need help or want to report a player? Submit a ticket in our Official Discord or reach out directly to the staff team.
+          </p>
+      </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://discord.gg/miamiliferoleplay"><i class="fab fa-discord"></i></a>
+        </div>
+        <p>&copy; 2025 Miami Life RP. All rights reserved.</p>
+        <p>This is a FiveM roleplay server. Not affiliated with Rockstar Games.</p>
+    </footer>
+
+    <div id="myLightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="img01">
+        <div id="caption" class="lightbox-caption"></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        const config = {
+            serverId: '4dp3o8',
+            refreshInterval: 30000,
+            apiEndpoint: 'https://servers-frontend.fivem.net/api/servers/single/'
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchServerData();
+            setInterval(fetchServerData, config.refreshInterval);
+
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('myLightbox');
+            const lightboxImg = document.getElementById('img01');
+            const lightboxCaption = document.getElementById('caption');
+            const closeBtn = document.querySelector('.close-lightbox');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    lightbox.style.display = 'block';
+                    lightboxImg.src = this.querySelector('img').src;
+                    lightboxCaption.innerHTML = this.querySelector('.gallery-item-caption').innerHTML;
+                });
+            });
+
+            closeBtn.addEventListener('click', function() {
+                lightbox.style.display = 'none';
+            });
+
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+
+        async function fetchServerData() {
+            try {
+                const response = await fetch(`${config.apiEndpoint}${config.serverId}`);
+                if (!response.ok) {
+                    throw new Error('Server not responding');
+                }
+
+                const data = await response.json();
+                updateServerStats(data);
+
+                // Try to get player list from the Data object first
+                if (data.Data && data.Data.players) {
+                    updatePlayerList(data.Data.players);
+                } else {
+                    // Fallback to trying the players.json endpoint
+                    try {
+                        const ip = data.Data.connectEndPoints && data.Data.connectEndPoints[0];
+                        if (ip) {
+                            const playerResponse = await fetch(`https://cors-anywhere.herokuapp.com/http://${ip}/players.json`, {
+                                headers: {
+                                    'X-Requested-With': 'XMLHttpRequest'
+                                }
+                            });
+                            const players = await playerResponse.json();
+                            updatePlayerList(players);
+                        }
+                    } catch (e) {
+                        console.log('Could not fetch detailed player list');
+                    }
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showError('server-stats', 'Server data unavailable');
+                document.getElementById('server-status').textContent = 'Offline';
+                document.getElementById('server-status').style.color = '#ff0000';
+            }
+        }
+
+        function updateServerStats(serverData) {
+            const playerCount = serverData.Data.clients || 0;
+            const maxPlayers = serverData.Data.sv_maxclients || 128;
+            document.getElementById('online-players').textContent = `${playerCount}/${maxPlayers}`;
+            document.getElementById('player-count').textContent = playerCount;
+            document.getElementById('queue-count').textContent = serverData.Data.queueLength || '0';
+            document.getElementById('server-status').textContent = 'Online';
+            document.getElementById('server-status').style.color = '#00ff00';
+        }
+
+        function updatePlayerList(players) {
+            const playerList = document.getElementById('player-list');
+            playerList.innerHTML = '';
+
+            if (!players || players.length === 0) {
+                playerList.innerHTML = '<div class="player">No players currently online</div>';
+                return;
+            }
+
+            players.sort((a, b) => {
+                const nameA = a.name.toUpperCase();
+                const nameB = b.name.toUpperCase();
+                return nameA.localeCompare(nameB);
+            });
+
+            players.forEach(player => {
+                const playerElement = document.createElement('div');
+                playerElement.className = 'player';
+
+                let badge = '';
+                const name = player.name || 'Unknown';
+
+                if (name.includes('[MDSD]')) {
+                    badge = '<span class="badge badge-mdsd">MDSD</span>';
+                } else if (name.includes('[EMS]')) {
+                    badge = '<span class="badge badge-ems">EMS</span>';
+                } else if (name.includes('[DOJ]')) {
+                    badge = '<span class="badge badge-doj">DOJ</span>';
+                } else {
+                    badge = '<span class="badge badge-civ">CIV</span>';
+                }
+
+                playerElement.innerHTML = `
+                    <span class="player-name">${escapeHtml(name)}${badge}</span>
+                    <div class="player-details">
+                        <span class="player-id">ID: ${player.id || 'N/A'}</span>
+                        <span class="player-ping">Ping: ${player.ping || '0'}ms</span>
+                    </div>
+                `;
+                playerList.appendChild(playerElement);
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showError(elementId, message) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.innerHTML = `<div class="error">${message}</div>`;
+            }
+        }
+    </script>
+</body>
+</html>
