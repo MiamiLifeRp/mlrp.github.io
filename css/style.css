@@ -13,7 +13,6 @@ body {
         url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none" stroke="%23974FF3" stroke-width="0.5" stroke-opacity="0.1"/></svg>');
 }
 
-/* Grid background */
 .bg-grid {
     background-image: linear-gradient(to right, rgba(151, 79, 243, 0.1) 1px, transparent 1px),
                         linear-gradient(to bottom, rgba(151, 79, 243, 0.1) 1px, transparent 1px);
@@ -23,14 +22,12 @@ body {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
-/* Progress bar animation */
 .progress-bar {
     transform-origin: 0%;
     transform: scaleX(0);
     background: linear-gradient(90deg, #974FF3, #B28AF8);
 }
 
-/* Navigation styles */
 [data-nav] {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -42,7 +39,6 @@ body {
     border-bottom: 2px solid rgba(151, 79, 243, 0.2);
 }
 
-/* Menu overlay */
 [data-menu-overlay] {
     display: flex;
     align-items: flex-start;
@@ -97,7 +93,6 @@ body {
     width: 1rem;
 }
 
-/* Smooth reveal animation classes */
 .reveal-hidden {
     opacity: 0;
     transform: translateY(20px);
@@ -110,18 +105,15 @@ body {
     transform: translateY(0);
 }
 
-/* Text balance for headings */
 h1, h2, h3 {
     text-wrap: balance;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15px 100%, 0 calc(100% - 15px));
 }
 
-/* Smooth hover transitions */
 a, button {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Card hover effects */
 .hover-lift {
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
                 border-color 0.3s ease,
@@ -135,13 +127,11 @@ a, button {
     border-color: #974FF3 !important;
 }
 
-/* Custom selection color */
 ::selection {
     background: rgba(151, 79, 243, 0.3);
     color: currentColor;
 }
 
-/* Smooth image loading */
 img {
     transition: opacity 0.3s ease;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15px 100%, 0 calc(100% - 15px));
@@ -155,13 +145,11 @@ img.loaded {
     opacity: 1;
 }
 
-/* Focus styles */
 a:focus-visible, button:focus-visible {
     outline: 2px solid rgba(151, 79, 243, 0.5);
     outline-offset: 2px;
 }
 
-/* Button styles */
 .bg-r6-purple {
     position: relative;
     overflow: hidden;
@@ -185,7 +173,6 @@ a:focus-visible, button:focus-visible {
     transform: translateX(100%);
 }
 
-/* Section dividers */
 section {
     position: relative;
 }
@@ -204,7 +191,6 @@ section::after {
     );
 }
 
-/* Card glowing effect */
 .bg-r6-dark {
     position: relative;
     overflow: hidden;
@@ -227,7 +213,6 @@ section::after {
     opacity: 1;
 }
 
-/* Print styles */
 @media print {
     .no-print {
         display: none;
@@ -244,7 +229,6 @@ section::after {
     }
 }
 
-/* Responsive typography */
 @media (max-width: 640px) {
     html {
         font-size: 14px;
@@ -277,12 +261,10 @@ section::after {
     }
 }
 
-/* Adjust home section padding */
 #home {
     padding-top: 6rem;
 }
 
-/* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -292,7 +274,6 @@ section::after {
     }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -310,7 +291,6 @@ section::after {
     background: #7A3BC7;
 }
 
-/* R6S-specific styles */
 .tactical-border {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15px 100%, 0 calc(100% - 15px));
     border: 2px solid rgba(151, 79, 243, 0.2);
@@ -346,7 +326,6 @@ section::after {
     pointer-events: none;
 }
 
-/* Live Data Styles */
 .server-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -437,7 +416,6 @@ section::after {
     color: #2ecc71;
 }
 
-/* Gallery Styles */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -482,7 +460,6 @@ section::after {
     font-weight: 500;
 }
 
-/* Lightbox Styles */
 .lightbox {
     display: none;
     position: fixed;
@@ -526,7 +503,6 @@ section::after {
     font-size: 1.2rem;
 }
 
-/* Rules Section Styles */
 .feature-card {
     background: rgba(26, 26, 26, 0.8);
     border: 2px solid rgba(151, 79, 243, 0.2);
@@ -565,7 +541,6 @@ section::after {
     font-weight: 500;
 }
 
-/* Loading animation */
 .loading {
     display: inline-block;
     width: 20px;
