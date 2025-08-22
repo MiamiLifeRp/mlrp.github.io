@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Life Rp : Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgba(15,15,15,0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(15,15,15,0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 {
+            margin-top: 0;
+            color: white;
+        }
+        .loader {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(119, 0, 255, 0.4);
+            background-color: rgba(119, 0, 255, 0.15);
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .btn {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(119, 0, 255, 0.4);
+            background-color: rgba(119, 0, 255, 0.15);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(21, 255, 0, 0.4);
+            background-color: rgba(21, 255, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting You</h1>
+        <div class="loader"></div>
+        <p>You are being redirected to the requested page.</p>
+        <p>If you are not redirected automatically, click the button below:</p>
+        <a href="fivem://connect/cfx.re/join/4dp3o8" id="redirectLink" class="btn">Go Now</a>
+    </div>
+
+    <script>
+        const redirectUrl = "fivem://connect/cfx.re/join/4dp3o8";
+
+        document.getElementById('redirectLink').href = redirectUrl;
+        
+        function redirect() {
+            window.location.href = redirectUrl;
+        }
+        
+        setTimeout(redirect, 3000);
+    </script>
+</body>
+</html>
